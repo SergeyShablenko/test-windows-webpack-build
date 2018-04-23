@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#93C54B">
+</head>
+<body>
+<div id="app" <%= htmlWebpackPlugin.options.maintenance ? "data-maintenance" : "" %>>
+  <div id="loading" class="open">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div class="object" id="object_four"></div>
+        <div class="object" id="object_three"></div>
+        <div class="object" id="object_two"></div>
+        <div class="object" id="object_one"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<noscript>
+  <div style="visibility: hidden">
+    You have to enable javascript to browse this site
+  </div>
+</noscript>
+</body>
+</html>

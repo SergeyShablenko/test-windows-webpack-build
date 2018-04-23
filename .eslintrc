@@ -1,0 +1,33 @@
+---
+extends:
+  - "./eslint/best-practices/walmart.js"
+  - "./eslint/errors/walmart.js"
+  - "./eslint/node/airbnb.js"
+  - "./eslint/style/airbnb.js"
+  - "./eslint/variables/airbnb.js"
+  - "./eslint/es6/airbnb.js"
+
+rules:
+  "strict": [2, "global"]
+  "no-magic-numbers": 0     # Magic numbers _define_ the rule settings.
+  "max-len": 0              # Bias towards comments / rules on _one line_
+  "react/jsx-uses-react": 2
+  "react/jsx-uses-vars": 2
+  "consistent-return": 0
+  "newline-after-var": 2
+
+env:
+  "browser": true
+  "es6": true
+
+globals:
+  "React": true
+  "numbro": true
+  "moment": true
+
+plugins: [
+  "babel",
+  "react"
+]
+
+parser: "babel-eslint"
